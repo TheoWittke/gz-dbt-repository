@@ -39,7 +39,7 @@ sources:
             description: date of the sale
           - name: orders_id
             description: id of the order
-          - name: products_id
+          - name: pdt_id
             description: id of the products in the sale
           - name: revenue
             description: total revenue for the products (already multiplied by the quantity bought)
@@ -47,4 +47,4 @@ sources:
             description: number of products of the same type
         tests:
           - unique:
-              primary_key: "(orders_id || '-' || products_id)"
+              column_name: "(orders_id || '-' || pdt_id)"
