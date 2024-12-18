@@ -1,6 +1,6 @@
 version: 1
 
-sources: 
+sources:
   - name: rawData
     schema: gz_raw_data
     tables:
