@@ -11,6 +11,6 @@ ship AS (
 SELECT
     *,
     ROUND(margin + shipping_fee - logcost - ship_cost,2) AS operational_margin
-FROM sales AS sa
-LEFT JOIN ship AS sh
+FROM sales
+LEFT JOIN ship
 USING(orders_id)
